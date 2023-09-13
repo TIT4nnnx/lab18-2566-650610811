@@ -29,7 +29,7 @@ export const GET = async (request) => {
   }
   if (role === "ADMIN") {
     return NextResponse.json({
-      ok: true,
+      ok: false,
       enrollments: DB.enrollments,
     });
   }
