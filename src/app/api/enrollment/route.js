@@ -27,10 +27,9 @@ export const GET = async (request) => {
       { status: 401 }
     );
   }
-  
   if (role === "ADMIN") {
     return NextResponse.json({
-      ok: false,
+      ok: true,
       enrollments: DB.enrollments,
     });
   }
