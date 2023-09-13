@@ -7,7 +7,7 @@ import { NextResponse } from "next/server";
 
 export const POST = async (request) => {
   const body = await request.json();
-  const { username, password } = body;
+  const { username, password } = body; //ดึงมาด้วยยยยยยยยยยยยยยยยยยยยยยยยยยยยยยย
 
   //you should do the validation here
   const user = DB.users.find(
