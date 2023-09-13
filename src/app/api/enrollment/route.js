@@ -14,7 +14,6 @@ export const GET = async (request) => {
 
   try {
     const payload = jwt.verify(token, process.env.JWT_SECRET);
-    console.log(payload);
     studentId = payload.studentId;
     role = payload.role;
     //read role information from "payload" here (just one line code!)
